@@ -1,0 +1,119 @@
+.userBookings {
+
+    margin-bottom: 20px;
+}
+
+.page-title {
+
+    text-align: center;
+    margin: 40px;
+    position: relative;
+    margin-right: 30px;
+    font-size: 120px;
+    color:  #F44336;
+}
+
+.card.text-center {
+
+    text-align: center;
+    position: relative;
+}
+
+.card-header {
+
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-block {
+
+    padding: 20px;
+}
+
+.card-title {
+
+    font-size: 40px;
+    text-align: center;
+    margin: 40px;
+}
+
+.card-text.booking-desc {
+
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-text.booking-days {
+
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text.booking-price {
+
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-footer {
+
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.btn-car-rental-app {
+
+    background-color:  #F44336;
+    border-color:  #F44336;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px; 
+      
+}
+
+.alert.alert-warning {
+
+    display: inline-block;
+    line-height: 40px;
+    font-size: 40px;
+    text-align: center; 
+    margin: 60px;
+    left: 12%;
+} 
+
+.btn.btn-success {
+
+    background-color:  #F44336;
+    border-color:  #F44336;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.btn.btn-danger {
+    background-color:  green;
+    border-color:  green;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+    
+}
+
+
+
+
+    
+
+
+

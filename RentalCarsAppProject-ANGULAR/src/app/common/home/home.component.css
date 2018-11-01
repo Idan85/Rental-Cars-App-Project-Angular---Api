@@ -1,0 +1,22 @@
+h1 {
+    font-size: 150px; 
+    color:Tomato;
+    text-align: center;    
+}
+
+p {
+    font-size: 30px;
+    color: maroon;
+}
+
+.catchphrase {
+
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    color: #f1f1f1;
+    padding: 40px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 50px;
+    letter-spacing: 1px;
+}

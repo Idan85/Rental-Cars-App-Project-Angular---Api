@@ -1,0 +1,11 @@
+.btn.btn-ghost {
+
+    background-color: transparent;
+    color:  #F44336;
+    border: 1px solid #F44336;
+    padding: 15px 30px; 
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 1000;
+}

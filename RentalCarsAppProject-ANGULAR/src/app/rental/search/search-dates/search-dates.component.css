@@ -1,0 +1,20 @@
+label {
+
+    color:black;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    left: 100%;
+    
+}
+
+.form-control.daterangepicker-input {
+
+    text-align: center;
+    width: 30%;
+    position: relative;
+    margin-right: 35px;
+    box-sizing: border-box;
+    left: 90%;
+    font-size: 22px;
+}

@@ -1,0 +1,54 @@
+.inline {
+
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+button.btn.btn-sm.btn-warning.btn-editable {
+
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;  
+   
+}
+
+button.btn.btn-sm.btn-danger.btn-editable {
+
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;   
+       
+}
+
+button.btn.btn-sm.btn-success.btn-editable {
+
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;   
+    
+ 
+}
+
+input {
+
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    text-rendering: auto;
+}
+
+.rental-type {
+
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+

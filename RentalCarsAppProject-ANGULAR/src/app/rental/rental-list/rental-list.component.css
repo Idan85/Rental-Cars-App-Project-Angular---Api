@@ -1,0 +1,31 @@
+h1 {
+
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: blue; 
+}
+
+#location1.typehead-text-field1 {
+
+    text-align: center;
+    position: relative;
+    width: 25%;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400px;
+    text-rendering: auto;
+    text-transform: none;
+}
+
+#one-way-label {
+
+    display: block;
+    color: #9b9b9b;
+    cursor: pointer;
+    float: left;
+    margin-top: 15px;
+    margin-right: 73px;
+}

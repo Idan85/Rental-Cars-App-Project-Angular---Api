@@ -1,0 +1,36 @@
+<a routerLink="/rentals/{{rental._id}}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">  
+    <div class="list-group-item clearfix">
+      <div class="pull-right" >
+            <p class="card-text">{{ rental.dailyRate }} $ Per Day &#183; Free Cancelation</p>           
+            <button class="btn btn-danger btn-confirm btn-clock">Book now</button>
+          </div>
+          <div class = "rental-car-info">
+              <ul><span><i class="fa fa-i-cursor"></i>=> {{ rental.specificiations  }}</span></ul>
+              <ul><span><i class="fa fa-users"></i>=> Seats: {{ rental.seats }}</span></ul>
+              <ul><span><i class="fa fa-door-closed"></i>=> Doors: {{ rental.doors }}</span></ul>
+          </div> 
+          <div class = "rental-assets">                                                         
+                     <ul><span><i class = "fa fa-snowflake"></i>=> Air Condition</span></ul>
+                     <ul><span><i class = "fa fa-suitcase"></i>=>{{ rental.largebags }} Large Bag/s</span></ul>     
+                     <ul><span><i class = "fa fa-briefcase"></i>=>{{ rental.smallbags }} Small Bag/s</span></ul> 
+              </div>
+          <h6 class="card-subtitle">{{ rental.category }}</h6>
+          <h4 class="card-title">{{ rental.model }}</h4>
+          <span class="pull-left">            
+              <img class="img-responsive" src="{{ rental.image }}">    
+              <!-- <app-search></app-search>           -->
+          </span> 
+         </div>    
+  
+    
+ <!-- <div class="card-car-card">
+    <img class="card-img-top" src="{{ rental.image }}" alt="">       
+    <div class="card-block"> 
+    <h6 class="card-subtitle">{{ rental.category }}</h6>
+    <h4 class="card-title">{{ rental.model }}</h4>
+    <p class="card-text">{{rental.dailyRate }} $ Per Day &#183; Free Cancelation</p>
+    <a herf="#" class="card-link">More Info</a>   
+  </div>
+</div>
+</a>  -->

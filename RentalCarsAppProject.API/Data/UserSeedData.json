@@ -1,0 +1,127 @@
+[
+{
+"Username": "Ashley",
+"Gender": "female",
+"DateOfBirth": "1953-03-01",
+"Password": "password",
+"email": "ashleydom@atomica.com",
+"Created": "2017-03-25",
+"City": "Bayview",
+"Country":"Zambia",
+"IdCard":"123457",
+"Photos": [
+    {
+        "url": "https://randomuser.me/api/portraits/women/33.jpg",
+        "IsMain": true
+    }
+ ]
+},
+
+{
+    "Username": "Reba",
+    "Gender": "female",
+    "DateOfBirth": "1984-12-05",
+    "Password": "password",
+    "email": "rebadom@atomica.com",
+    "Created": "2017-06-24",
+    "City": "Hannasville",
+    "Country":"Poland",
+    "IdCard":"012345",
+    "Photos": [
+        {
+            "url": "https://randomuser.me/api/portraits/women/24.jpg",
+            "IsMain": true
+        }
+    ]
+},
+
+{
+    "Username": "Annmarie",
+    "Gender": "female",
+    "DateOfBirth": "1970-02-25",
+    "Password": "password",
+    "email": "annmariedom@atomica.com",
+    "Created": "2017-07-17",
+    "City": "Sutton",
+    "Country":"Bouvet Island",
+    "IdCard":"567890",
+    "Photos": [
+        {
+            "url": "https://randomuser.me/api/portraits/women/74.jpg",
+            "IsMain": true
+        }
+    ]
+},
+
+{
+    "Username": "Rona",
+    "Gender": "female",
+    "DateOfBirth": "1979-04-19",
+    "Password": "password",
+    "email": "ronadom@atomica.com",
+    "Created": "2017-01-21",
+    "City": "Loma",
+    "Country":"Paraguay",
+    "IdCard":"456789",
+    "Photos": [
+        {
+            "url": "https://randomuser.me/api/portraits/women/49.jpg",
+            "IsMain": true
+        }
+    ]
+},
+
+{
+    "Username": "Lloyd",
+    "Gender": "male",
+    "DateOfBirth": "1957-03-07",
+    "Password": "password",
+    "email": "lloyddom@atomica.com",
+    "Created": "2017-08-22",
+    "City": "Loma",
+    "Country":"Paraguay",
+    "IdCard":"345678",
+    "Photos": [
+        {
+            "url": "https://randomuser.me/api/portraits/men/4.jpg",
+            "IsMain": true
+        }
+    ]
+},
+
+{
+    "Username": "Simon",
+    "Gender": "male",
+    "DateOfBirth": "1984-02-19",
+    "Password": "password",
+    "email": "simondom@atomica.com",
+    "Created": "2017-06-27",
+    "City": "Cavalero",
+    "Country":"Viet Nam",
+    "IdCard":"234567",
+    "Photos": [
+        {
+            "url": "https://randomuser.me/api/portraits/men/14.jpg",
+            "IsMain": true
+        }
+    ]
+},
+
+{
+    "Username": "Larsen",
+    "Gender": "male",
+    "DateOfBirth": "1969-08-15",
+    "Password": "password",
+    "email": "larsendom@atomica.com",
+    "Created": "2017-02-17",
+    "City": "Inkerman",
+    "Country":"Canada",
+    "IdCard":"123456",
+    "Photos": [
+        {
+            "url": "https://randomuser.me/api/portraits/men/96.jpg",
+            "IsMain": true
+        }
+    ]
+}
+]

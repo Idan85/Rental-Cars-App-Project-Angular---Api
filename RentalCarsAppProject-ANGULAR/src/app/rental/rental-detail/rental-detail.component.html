@@ -1,0 +1,125 @@
+<div class="container" *ngIf=rental>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<div class = "upper-section">  
+        <div class = "row">
+            
+            <div class="col-md-6">  
+                <img src = "{{rental.image}}" alt="">
+                <hr>
+                <div class="detail-section">               
+                            <div class = "rental">
+                                
+                                <div class="rental-owner">
+                                    <img src="http://api.adorable.io/avatars/285/abott@adorable.png" alt="">
+                                    <span>{{ rental.user.username }}</span>
+                                </div>
+
+                                <h2 class = "rental-type {{ rental.category}}">Category: {{ rental.category | ucwords  }}</h2>                                
+                                <h1 class = "rental-model">Model: {{ rental.model | ucwords }}</h1>
+                                <h2 class = "rental-company">Company: {{ rental.company  }}</h2>
+                                <h2 class = "retnal-specificiations">Specification: {{ rental.specificiations  }}</h2>
+                                <div class = "rental-car-info">
+                                    <ul><span><i class="fa fa-globe"></i>=> Production Year: {{ rental.year }}</span></ul>
+                                    <ul><span><i class="fa fa-users"></i>=> Seats: {{ rental.seats }}</span></ul>
+                                    <ul><span><i class="fa fa-door-closed"></i>=> Doors: {{ rental.doors }}</span></ul>
+                                </div> 
+                             </div>
+                         </div> 
+                       </div>
+
+       <div class="col-md-6">
+            <app-map [location]="rental.pickup + rental.dropoff"></app-map>
+            <hr>
+            <div class="col-md-10">
+                <app-rental-detail-booking [rental]="rental"></app-rental-detail-booking>
+            </div>
+           
+            <!-- <div class="section">
+                    <div class="section-content">
+                        <div id="supplier-information" class="supplier-information">
+                            <div class="supplier-information-column">
+                                <div class="supplier-information-content">
+                                    <div class="supplier-information-section">
+                                        <h2 class="title"> Supplier Location</h2>                                           
+                                        <div class="supplier-information">Pick-up:</div>                                                
+                                        <h3 class="supplier-information-heading">{{ rental.pickup }}</h3> -->
+
+                                        <!-- <div class="supplier-information-row">
+                                            <div class="supplier-information-address">Sde Dov Airport, Tel Aviv, Tel Aviv, Israel</div>
+                                        </div> -->
+
+                                        <!-- <div class="supplier-information-row">
+                                        <h4 class="supplier-information-title"> Opening hours:</h4>                                                    
+                     
+                        <tr>
+                                <td class="supplier-information-opening-day-and-time">Sunday - 7am - 5pm</td>
+                
+                                </tr>    
+                        <tr>
+                                <td class="supplier-information-opening-day-and-time">Monday - Thursday - 7am - 5pm</td>
+                
+                                </tr>
+                        <tr>
+                                <td class="supplier-information-opening-day-and-time">Friday - 8am - 1pm</td>
+                
+                                </tr>
+                        <tr>
+                                <td class="supplier-information-opening-day-and-time">Saturday - CLOSED</td>
+                
+                                    </tr>
+                                
+                </div>
+            </div>
+                                    <div class="supplier-information-section">
+                                            <div class="supplier-information-return"> Drop-off:</div>  
+                                            <h3 class="supplier-information-heading">{{ rental.dropoff }}</h3>
+                                                
+                                             <div class="supplier-information-row">
+                                                <div class="supplier-information-address">Tel Aviv, Tel Aviv, Israel</div>                                                 -->
+                                            <!-- </div> -->
+                                            <!-- <div class="supplier-information-row">
+                                                <h4 class="supplier-information-title">Opening hours:</h4>
+                              <tr>
+                                <td class="supplier-information-opening-day-and-time">Sunday - Monday - 24 hr</td>
+                                    </tr>               
+                                          </div>
+                                        </div> 
+                                    </div> -->
+                  <!-- </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+        <div class="col-md-10">  
+         <div class = "rental-assets">     
+              <hr>        
+             <h3 class = "title">Assets:</h3>                                                    
+                     <ul><span><i class = "fa fa-snowflake"></i>=> Air Condition</span></ul>
+                     <ul><span><i class = "fa fa-suitcase"></i>=> {{ rental.largebags }} Large Bag/s</span></ul>     
+                     <ul><span><i class = "fa fa-briefcase"></i>=> {{ rental.smallbags }} Small Bag/s</span></ul> 
+              </div>
+          </div>
+
+
+
+<!-- <div class = "container">
+<div class = "row">
+<div *ngIf="rental">
+<p> {{rental.id}} </p>
+<p> {{rental.category}} </p>
+<p> {{rental.model}} </p>
+<p> {{rental.company}} </p>
+<p> {{rental.year}} </p>
+<p> {{rental.seats}} </p>
+<p> {{rental.doors}} </p>
+<p> {{rental.specificiations}} </p>
+<p> {{rental.dailyRate}}  $</p>
+</div>
+</div>
+</div> -->
+
+
+

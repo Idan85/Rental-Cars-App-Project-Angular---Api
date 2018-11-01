@@ -1,0 +1,132 @@
+.card-block {
+
+    padding: 20px;
+}
+
+.page-title {
+
+    text-align: center;
+    margin: 40px;
+    position: relative;
+    margin-right: 30px;
+    font-size: 120px;
+    color:  #F44336;
+}
+
+.card-title {
+
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+.card.text-center {
+
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+} 
+
+.btn-car-rental-app {
+
+    background-color:  #F44336;
+    border-color:  #F44336;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: .25rem;
+    font-weight: 1000;
+    float: right;
+
+}
+
+.card-footer.text-muted {
+
+    font-size: 14px;
+}
+
+p {
+
+    display: inline-block;
+    line-height: 10px;
+    font-size: 25px;
+    position: relative;
+
+}
+
+.confirm-message {
+
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 25px;
+    position: relative;
+
+}
+
+.btn.btn-success {
+
+    font-size: 25px;
+    font-weight: 1000;
+    position: relative;
+    margin: 20px;
+}
+
+.btn.btn-danger {
+
+    font-size: 25px;
+    font-weight: 1000;
+    position: relative;
+}
+
+.col-md-8 {
+
+    position: relative;
+    left: 20%;
+}
+
+.alert.alert-warning {
+
+    display: inline-block;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center; 
+    margin: 60px;
+} 
+
+.btn-car-rental-app1 {
+
+    background-color:  #F44336;
+    border-color:  #F44336;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 20px;
+    margin: 60px;
+    cursor: pointer;
+}
+
+.btn.btn-ghost {
+
+    background-color: transparent;
+    color:  #F44336;
+    border: 1px solid #F44336;
+    padding: 15px 30px; 
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 1000;
+
+}
+
+.btn.btn-warning {
+
+    color: white;
+    padding: 15px 30px; 
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 1000;
+    right: -20px;
+}
+

@@ -1,0 +1,256 @@
+<section id="newRental">
+  <div class="app-rental-create">
+    <div class="row">  
+      
+        <div class="col-md-12-ml-auto">
+          <h2 class="catchphrase">Awsome Cars and Prices in reach of few clicks</h2>
+
+        <h1 class="page-title">Create Renatl</h1>
+
+        <form #rentalForm="ngForm">
+
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text"
+                   class="form-control"
+                   id="category"
+                   name="category"
+                   [(ngModel)]="newRental.category"
+                   placeholder="Enter Category"
+                   #category="ngModel"
+                   required>
+
+                   <div *ngIf="category.invalid && (category.dirty || category.touched)" 
+                   class="alert alert-danger-1">
+               
+                   <div *ngIf="category.errors['required']">Category Car Is Required.
+                 </div>
+               </div>
+            </div>
+
+            <div class="form-group">
+                <label for="model">Model:</label>
+                <input type="text"
+                       class="form-control"
+                       id="model"
+                       name="model"
+                       [(ngModel)]="newRental.model"
+                       placeholder=" Enter Model Car"
+                       #model="ngModel"
+                       required>
+
+                       <div *ngIf="model.invalid && (model.dirty || model.touched)" 
+                       class="alert alert-danger-1">
+                   
+                       <div *ngIf="model.errors['required']">Model Car Is Required.
+                     </div>
+                   </div>
+                </div>
+
+            <div class="form-group">
+                <label for="company">Company:</label>
+                <input type="text"
+                       class="form-control"
+                       id="company"
+                       name="company"
+                       [(ngModel)]="newRental.company"
+                       placeholder="Enter Company Car"
+                       #company="ngModel"
+                       required>
+
+                       <div *ngIf="company.invalid && (company.dirty || company.touched)" 
+                       class="alert alert-danger-1">
+                   
+                       <div *ngIf="company.errors['required']">Company Car Is Required.
+                     </div>
+                   </div>
+                </div>
+
+            <div class="form-group">
+                  <label for="year">Year Production:</label>
+                  <input type="number"
+                         class="form-control"
+                         id="year"
+                         name="year"
+                         [(ngModel)]="newRental.year"
+                         placeholder="Enter Year Production"
+                         #year="ngModel"
+                         required>
+
+                         <div *ngIf="year.invalid && (year.dirty || year.touched)" 
+                         class="alert alert-danger-1">
+                     
+                         <div *ngIf="year.errors['required']">Year Production Is Required.
+                       </div>
+                     </div>
+                  </div>
+
+            <div class="form-group">
+                 <label for="seats">Seats:</label>
+                 <input type="number"
+                        class="form-control"
+                        id="seats"
+                        name="seats"
+                        [(ngModel)]="newRental.seats"
+                        placeholder="Enter Seats Number"
+                        #seats="ngModel"
+                        required>
+
+                        <div *ngIf="seats.invalid && (seats.dirty || seats.touched)" 
+                        class="alert alert-danger-1">
+                    
+                        <div *ngIf="seats.errors['required']">Seats Number Is Required.
+                      </div>
+                    </div>
+                      </div>
+
+            <div class="form-group">
+                 <label for="doors">Doors</label>
+                 <input type="number"
+                        class="form-control"
+                        id="doors"
+                        name="doors"
+                        [(ngModel)]="newRental.doors"
+                        placeholder="Enter Doors Number"
+                        #doors="ngModel"
+                        required>
+
+                        <div *ngIf="doors.invalid && (doors.dirty || doors.touched)" 
+                        class="alert alert-danger-1">
+                    
+                        <div *ngIf="doors.errors['required']">Doors Number Is Required.
+                      </div>
+                    </div>
+                   </div>
+
+            <div class="form-group">
+                 <label for="dailyRate">Daily Rate:</label>
+                 <div class="input-group">
+                  <div class="input-group-prepend">
+                   <div class="input-group-text">$</div>
+                   </div> 
+
+                   <input type="number"
+                          name="dailyRate"
+                          class="form-control"
+                          id="dailyRate"
+                          name="dailyRate"
+                          [(ngModel)]="newRental.dailyRate"
+                          placeholder="Enter Daily Rate"
+                          #dailyRate="ngModel"
+                          required>
+
+                          <div *ngIf="dailyRate.invalid && (dailyRate.dirty || dailyRate.touched)" 
+                          class="alert alert-danger-1">
+                      
+                          <div *ngIf="dailyRate.errors['required']">Daily Rate Is Required.
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+
+             <div class="form-group">
+               <app-image-upload (imageUploaded)="handleImageUpload ( $event )"
+                                 (imageError)="handleImageError ( )"></app-image-upload>  
+               </div> 
+                                     
+                        
+
+             <div class="form-group">
+                  <label for="specificiations">Specificiations:</label>
+
+                  <select class="form-control1"
+                         id="specificiations"
+                         name="Specificiations"
+                         [(ngModel)]="newRental.specificiations"
+                         #specificiations="ngModel"
+                         required>
+
+                         <option disabled selected>Choose Specificiation</option>
+                         <option> Automatic gearbox </option>
+                         <option> Manual gearbox </option>
+                        </select> 
+                        
+                        <div *ngIf="specificiations.invalid && (specificiations.dirty || specificiations.touched)" 
+                        class="alert alert-danger-1">
+                    
+                        <div *ngIf="specificiations.errors['required']">Specificiation Is Required.
+                      </div>
+                    </div>
+                   </div>
+
+            <div class="form-group">
+                <label for="pickup">Pick-Up:</label>
+          
+                <select class="form-control2"
+                        id="pickup"
+                        name="pickup"
+                        [(ngModel)]="newRental.pickup"
+                        #pickup="ngModel"
+                        required>
+
+                        <option disabled selected>Choose Pick-Up Location</option>
+                        <option> Ben Gurion Airport, terminal 3, Tel Aviv-Yafo </option>
+                        <option> Sde Dov Airport, Tel Aviv-Yafo </option>
+                        </select>  
+                        
+                        <div *ngIf="pickup.invalid && (pickup.dirty || pickup.touched)" 
+                        class="alert alert-danger-1">
+                    
+                        <div *ngIf="pickup.errors['required']">Pick-Up Is Required.
+                      </div>
+                    </div>
+                  </div>
+
+            <div class="form-group">
+                 <label for="dropoff">Drop-Off:</label>
+                      
+                 <select class="form-control2"
+                         id="dropoff"
+                         name="dropoff"
+                         [(ngModel)]="newRental.dropoff"
+                         #dropoff="ngModel"
+                         required>
+
+                        <option disabled selected>Choose Drop-Off Location</option>
+                        <option> Ben Gurion Airport, terminal 3, Tel Aviv-Yafo </option>
+                        <option> Sde Dov Airport, Tel Aviv-Yafo </option>
+                        </select>     
+                        
+                        <div *ngIf="dropoff.invalid && (dropoff.dirty || dropoff.touched)" 
+                        class="alert alert-danger-1">
+                    
+                        <div *ngIf="dropoff.errors['required']">Pick-Up Is Required.
+                      </div>
+                    </div>
+                  </div>
+
+              <!-- <div class="form-group">
+                  <label for="description">Description</label>
+          
+                  <textarea rows="5"
+                            type="text"
+                            class="form-control"
+                            id="description"
+                            name="description"
+                            [(ngModel)]="newRental.description">
+                            </textarea>
+                            </div> -->
+
+            <button (click)="createRental()"
+                    [disabled]="!rentalForm.form.valid || !newRental.image"
+                    type="button" 
+                    class="btn btn-danger btn-confirm btn-clock">submit</button>
+            </form>
+
+           <!-- <div *ngIf="errors.length > 0" class="alert alert-danger-2">
+                <p *ngFor="let error of errors">
+                  {{ error.detail }}
+                </p>
+              </div> -->
+
+         </div>     
+        </div>
+      </div>
+</section>
+

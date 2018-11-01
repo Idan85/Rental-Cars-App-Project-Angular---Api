@@ -1,0 +1,161 @@
+<!-- <a routerLink="/rentals/car findings"></a>  -->
+
+ <!-- <a routerLink="/rentals"></a>  -->
+
+<section class="searching">
+   <div class="serching">
+    <div class="row">    
+        <div class="col-md-12-ml-auto">
+          <h6 class="catchphrase">Awesome Cars For The Best Prices Just for You - Car 2 Rental</h6>
+      </div> 
+   </div>
+       
+    <div class="col-md-6">
+        <div class="car-rental-app-form">
+        <form #searchForm="ngForm">
+        <h1 class="page-title">Search Your car</h1>
+            
+         <app-rental-dates></app-rental-dates> 
+    
+                    <p>
+                    <label for="gearbox">Gearbox:</label>
+                    </p>   
+
+                    <div class="form-group">
+
+                     <ng-multiselect-dropdown
+                     [placeholder]="'Choose Gearbox'"
+                     [data]="dropdownList"
+                     [settings]="dropdownSettings"
+                     (onSelect)="onItemSelect($event)"
+                     (onSelectAll)="onSelectAll($event)"
+                      name="gearbox" 
+                     [(ngModel)]="newRental.gearbox">
+                    </ng-multiselect-dropdown> 
+                     
+                     </div>     
+                                  
+                    <p>
+                    <label for="year">Production Year:</label>
+                    </p>
+
+                    <div class="form-group">
+
+                    <ng-multiselect-dropdown 
+                    [placeholder]="'Choose Production Year'"
+                    [data]="dropdownList1"
+                    [settings]="dropdownSettings"
+                    (onSelect)="onItemSelect($event)"
+                    (onSelectAll)="onSelectAll($event)"
+                     name="year"
+                    [(ngModel)]="newRental.year"> 
+                    </ng-multiselect-dropdown>
+                    </div>   
+                                      
+                    <p>
+                    <label for="company">Company:</label>
+                    </p>
+
+                    <div class="form-group">
+
+                    <ng-multiselect-dropdown
+                    [placeholder]="'Choose Company'"
+                    [data]="dropdownList2"
+                    [settings]="dropdownSettings"
+                    (onSelect)="onItemSelect($event)"
+                    (onSelectAll)="onSelectAll($event)"
+                    name="company"
+                    [(ngModel)]="newRental.company"> 
+                    </ng-multiselect-dropdown>
+                    </div>     
+            
+            
+                    <p>
+                    <label for="model">Model:</label>
+                    </p>
+
+                    <div class="form-group">
+
+                    <ng-multiselect-dropdown 
+                    [placeholder]="'Choose Model'"
+                    [data]="dropdownList3"
+                    [settings]="dropdownSettings"
+                    (onSelect)="onItemSelect($event)"
+                    (onSelectAll)="onSelectAll($event)"
+                     name="model"
+                    [(ngModel)]="newRental.model"> 
+                    </ng-multiselect-dropdown>
+                    </div>
+
+            <div class="form-group1">
+                    <p>
+                    <label for="pickup">Pick-up:</label>
+                    </p>
+
+                    <select class="form-control"
+                            id="pickup"
+                            name="pickup"
+                            [(ngModel)]="newRental.pickup">  
+
+                    <option hidden>Choose</option>                    
+                    <option value="Ben Gurion Airport, terminal 3">
+                                   Ben Gurion Airport, terminal 3</option>
+                    <option value="Sde Dov Airport, Tel Aviv-Yafo">
+                                   Sde Dov Airport, Tel Aviv-Yafo</option>             
+                    </select>
+                    </div>
+
+                   <div class="form-group2">  
+                   <input type="checkbox"  
+                          id="checkbox"
+                          name="checkbox"
+                          [(ngModel)]="newRental.checkbox"
+                          (click)="isShow=!isShow">Return car to other location
+                   </div>
+                   
+                   <div class="form-group3">
+                   <div class="ruleOptionsPanel" *ngIf="isShow">
+
+                   <p>
+                   <label for="dropoff">Drop-Off:</label>
+                   </p>
+
+                   <select class="form-control"
+                           id="dropoff"
+                           name="dropoff"
+                           [(ngModel)]="newRental.dropoff">   
+
+                   <option hidden>Choose</option>                    
+                   <option value="Ben Gurion Airport, terminal 3">
+                                  Ben Gurion Airport, terminal 3</option>
+                   <option value="Sde Dov Airport, Tel Aviv-Yafo">
+                                  Sde Dov Airport, Tel Aviv-Yafo</option>               
+                   </select>       
+                   </div>
+                   </div>
+                
+
+                      <p>
+                      <label for="description">Description:</label>
+                      </p>
+
+                      <div class="form-group">
+                      <textarea rows="5"
+                                type="text"
+                                class="form-control"
+                                id="description">
+                                </textarea>
+                                </div>
+
+        
+            <button #rentalId (click)="createSearch ( )" 
+                    type="button" 
+                    class="btn btn-danger btn-confirm btn-clock">Search</button>
+        </form>
+       </div>
+     </div>
+  </div>
+</section> 
+
+  
+ 

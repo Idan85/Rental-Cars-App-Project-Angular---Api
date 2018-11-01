@@ -1,0 +1,199 @@
+.booking {
+
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+.btn.btn-danger.btn-confirm.btn-clock {
+
+    background-color: #FF5A5F;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 13px;
+    left: 20%;
+    position: relative;
+}
+
+
+label {
+
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    left: 35%;
+    
+}
+
+.form-control {
+
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+#days.form-control {
+
+    text-align: center;
+    width: 80%;
+    position: relative;
+    margin-right: 35px;
+    box-sizing: border-box;
+    display: inline-block; 
+}
+
+.form-control.daterangepicker-input {
+
+    text-align: center;
+    width: 80%;
+    position: relative;
+    margin-right: 35px;
+    box-sizing: border-box;
+    display: inline-block; 
+    left: 5%; 
+}
+
+h3 {
+
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    left: 25%;
+    
+}
+
+.booking-note-title {
+
+    font-size: 22px;
+    margin-bottom: 10x;
+    position: relative;
+
+}
+
+.booking-note-text {
+
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+}
+
+ng-template {
+
+    position: relative;
+    margin-bottom: 500px;
+}
+
+.modal-header {
+
+    position: relative;    
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.close {
+
+    position: relative;  
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+}
+
+.modal-title.pull-left {
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+button.btn.btn-default {
+
+    background-color: #FF5A5F;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+}
+
+button.btn.btn-success {
+
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative
+}
+
+em {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.overlay-container {
+
+    background-color: #FF5A5F;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+}
+
+.active.start-date.available {
+
+    background-color: #FF5A5F;
+}
+
+.active.end-date.in-range.available {
+    
+    background-color: #FF5A5F;
+}
+
+.in-range.available {
+
+    background-color: #ffa9a9;
+}
+
+.should-login {
+
+    background-color: #FF5A5F;
+    color: white;
+    text-align: center; 
+    position: relative;
+}
+
+a {
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+    
+
+
+
+
+

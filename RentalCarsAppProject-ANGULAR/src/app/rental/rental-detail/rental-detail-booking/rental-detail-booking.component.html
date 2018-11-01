@@ -1,0 +1,79 @@
+<div class="booking">
+  <h3 class="booking-price"> ${{ rental.dailyRate }} <span class="booking-per-day">Per Day</span></h3>
+  <hr>
+
+
+
+  <ng-container *ngIf="auth.isAuthenticated()">
+  
+  <form #bookingForm="ngForm">
+  <label>Dates:</label>
+  <input type="text" class="form-control daterangepicker-input" name="daterangeInput" daterangepicker [options]="options"
+        (selected)="selectedDate($event, daterange)"/>
+         <!-- <div class="form-group">
+           <label for="days">Days:</label>
+           <input type="number" class="form-control" id="days" aria-describedby="emailHelp" placeholder="">
+          </div> -->
+          </form>
+
+          <button (click)="openModal(template)"
+                  [disabled]="!bookingForm.form.valid || !newBooking.startAt || !newBooking.startAt" 
+                  class="btn btn-danger btn-confirm btn-clock">Rental Car Now</button>
+          <hr>
+          </ng-container>
+
+          <div *ngIf="!auth.isAuthenticated()" class="should-login">
+            <a routerLink="/login">Login and book this car today</a>
+          </div>
+
+          <p class="booking-note-title">People are intrested in this Car</p>
+          <p class="booking-note-text">More than 1000 people checked this rental in last month</p>
+    </div>
+
+<!-- <ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title"  id="modal-basic-title">Modal title</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <p>One fine body</p>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template> -->
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Confirm Booking <p>{{ newBooking.startAt }} to {{ newBooking.endAt }}</p></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+    <div class="modal-body">
+    <p><em>{{ newBooking.days }}</em> days</p>
+    <p><em>{{ rental.dailyRate }}$</em> per Day</p>
+    <p>Price: <em>{{ newBooking.totalPrice }}$</em></p>
+    <hr>
+
+    <app-payment (paymentConfirmed)='onPaymentConfirmed($event)'></app-payment>
+
+    <p>Do you confirms booking for selected days?</p>
+  </div>
+  <div *ngIf="errors.length > 0" class="alert alert-danger modal-error">
+    <p *ngFor="let error of errors">
+      {{ error.detail }}
+    </p>
+  </div>
+  
+  <div class="modal-footer">
+    <button [disabled]="!newBooking.paymentToken" type="button" class="btn btn-default" (click)="createBooking()">Confirm</button>
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Close</button>
+  
+</div>
+</ng-template>

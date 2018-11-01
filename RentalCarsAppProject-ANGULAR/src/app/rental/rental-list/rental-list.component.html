@@ -1,0 +1,122 @@
+<div class="container">
+  <a routerLink="/rentals"></a>
+  <!-- <form class="main-form-horizonal"> -->
+    <!-- <div class="fare-desktop"> -->
+      <!-- <div class="row"> -->
+        <!-- <div id="form-box">
+          <div class="small-12 columns">
+            <div id="location1" class="pickup-typehead">
+              <span class="typehead">
+                <input type="text" autocomplete="off" placeholder="Pick-up Location" id="location1" class="typehead-text-field1" 
+                       spellcheck="false" dir="auto">
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block-medium">
+          <div id="pickupDataPicker" class="form-group-datapicker">
+          </div>
+        </div>
+
+        <div class="small-12 columns">
+          <label id="one-way-label">
+            <input name="isOneWay" type="checkbox" id="checkbox1" class="cursor-label">Return at another location</label>
+          </div>
+        </div>
+      </div> -->
+
+
+  <!-- </form>     -->
+    <h1 class="title">Your Home Everywhere In The Globe - Car 2 Rental</h1>
+    <div class="row">
+       <!-- <div class="col-md-2">
+            <app-filter-results></app-filter-results>
+        </div> -->
+        
+      <div class="col-md-12">
+
+       
+
+       <div *ngFor="let rental of rentals">
+        <app-rental-list-item [rental]="rental"></app-rental-list-item>
+        
+     </div>
+    </div>
+  </div>     
+
+
+<!--       <div class='col-md-3 col-xs-6'>
+          <app-rental-list-item></app-rental-list-item>
+      </div> 
+
+      <div class='col-md-3 col-xs-6'>
+        <app-rental-list-item></app-rental-list-item>
+      </div> 
+
+      <div class='col-md-3 col-xs-6'>
+        <app-rental-list-item></app-rental-list-item>
+      </div> 
+
+      <div class='col-md-3 col-xs-6'>
+        <app-rental-list-item></app-rental-list-item>
+      </div>  -->
+    <!-- <div class="card-car-card">
+          <img class="card-img-top" src="https://cdn2.rcstatic.com/images/car_images/new_images/suzuki/alto_lrg.jpg" alt="">       
+          <div class="card-block"> 
+          <h6 class="card-subtitle">Small Car &#183;</h6>
+          <h4 class="card-title">Suzuki Alto</h4>
+          <p class="card-text">$46 Per Day &#183; Free Cancelation</p>
+          <a herf="#" class="card-link">More Info</a>    
+        </div> -->
+      
+    <!-- </div> -->
+    
+<!--     <div class='col-md-3 col-xs-6'>
+        <div class="card-car-card">
+          <img class="card-img-top" src="https://cdn2.rcstatic.com/images/car_images/new_images/hyundai/i25_accent_lrg.jpg" alt="">       
+          <div class="card-block"> 
+          <h6 class="card-subtitle">Medium Car &#183;</h6>
+          <h4 class="card-title">Hyundai i25</h4>
+          <p class="card-text">$54 Per Day &#183; Free Cancelation</p>
+          <a herf="#" class="card-link">More Info</a>    
+        </div>
+      </div>
+    </div>
+    
+    <div class='col-md-3 col-xs-6'>
+        <div class="card-car-card">
+          <img class="card-img-top" src="https://cdn2.rcstatic.com/images/car_images/new_images/mazda/6_lrg.jpg" alt="">       
+          <div class="card-block"> 
+          <h6 class="card-subtitle">Large Car &#183;</h6>
+          <h4 class="card-title">Mazda 6</h4>
+          <p class="card-text">$78 Per Day &#183; Free Cancelation</p>
+          <a herf="#" class="card-link">More Info</a>    
+        </div>
+      </div>
+    </div>
+    
+    <div class='col-md-3 col-xs-6'>
+        <div class="card-car-card">
+          <img class="card-img-top" src="https://cdn2.rcstatic.com/images/car_images/new_images/toyota/verso_lrg.jpg" alt="">       
+          <div class="card-block"> 
+          <h6 class="card-subtitle">People Carriers &#183;</h6>
+          <h4 class="card-title">Toyota Verso</h4>
+          <p class="card-text">$169 Per Day &#183; Free Cancelation</p>
+          <a herf="#" class="card-link">More Info</a>    
+        </div>
+      </div>
+    </div>
+    
+    <div class='col-md-3 col-xs-6'>
+        <div class="card-car-card">
+          <img class="card-img-top" src="https://cdn2.rcstatic.com/images/car_images/new_images/subaru/xv_lrg.jpg" alt="">       
+          <div class="card-block"> 
+          <h6 class="card-subtitle">SUV (sport utility vehicle) &#183;</h6>
+          <h4 class="card-title">Subaru XV</h4>
+          <p class="card-text">$189 Per Day &#183; Free Cancelation</p>
+          <a herf="#" class="card-link">More Info</a>    
+           </div>
+         </div>
+       </div> -->
+    

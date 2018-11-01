@@ -1,0 +1,257 @@
+
+<!-- <form> -->
+    <div class="left-data clearfix">
+  <!-- <div class="filters-body">
+    <div class="filter-box">
+      <div id="filter-results" class="supplier view"> -->
+        
+        <h2>
+          Search for rental cars
+        </h2>
+        <!-- <div class="inner">
+          <div class="pickup"> -->
+            <div class="title"> Pick-Up
+             <span class="change">
+  
+               <a onclick="switchSearhPanel()">Change</a>
+               <div class="search-panel" style="display: none;">
+              <select name="country">
+                <option value="0" disabled="disabled">Please Select</option>
+                <option value="Israel">Israel</option>
+              </select>
+
+              <select name="city">
+                  <option value="0" disabled="disabled">Please Select</option>
+                  <option value="Tel Aviv-Yafo">Tel Aviv-Yafo</option>
+                </select>
+
+                <select name="location">
+                    <option value="0" disabled="disabled">Please Select</option>
+                    <option value="Ben Gurion Airport,terminal 3">Ben Gurion Airport,terminal 3</option>
+                    <option value="Sde Dov Airport">Sde Dov Airport</option>
+                  </select>
+                </div>
+
+                <div class="pickup_location" style="display: none;"></div>
+
+                <div class="pickup_details">
+                  <div class="input" id="dataOuter">
+                    <span class="input" id="dataInner">
+                        <input type="text" class="form-control daterangepicker-input" name="daterangeInput" daterangepicker [options]="options"
+                        (selected)="selectedDate($event, daterange)"/>
+                        </span>
+                       </div>
+                      </div>
+
+<div class="filter-container">
+            <form class="filter-container_animation">
+              <h4 class="show-for-large-up">Filter your results<br></h4>
+              <div class="dropdown-click">
+                <div class="filters-body">
+                  <div class="filter-box">
+                    <div class="suplier company" id="rental-company">
+                      
+            
+                      
+                     
+                        <span data-nav-element="reset" data-nav-type="reset"
+                         data-filter-refinment="all filters" class="reset-all clear-all">Clear All</span>
+                    
+                          <hr>
+                          <div class="dropdown-container">
+                          <Button type="button" id="1" class="btn btn-outline-primary" (click)="isCollapsed=!isCollapsed"
+                          [attr.aria-expanded]="!isCollapsed" aria-controls="collapse" >Car Type<i class="fa fa-caret-down"></i>                                                
+                          </Button>
+
+                          <div id="collapse" [ngbCollapse]="isCollapsed">
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Small Car
+                          </span>
+                          </label>
+                           
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Medium Car
+                          </span>
+                          </label>
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Large Car
+                          </span>
+                          </label>
+                           
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          People Carriers
+                          </span>
+                          </label>
+                           
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          SUV (sport utility vehicle)
+                          </span>
+                          </label> 
+                          </div>
+
+                          <hr>
+                          <div class="dropdown-container">
+                          <Button type="button" id="2" class="btn btn-outline-primary" (click)="isCollapsed=!isCollapsed"
+                          [attr.aria-expanded]="!isCollapsed" aria-controls="collapse" >Car Companies<i class="fa fa-caret-down"></i>                                                
+                          </Button>
+    
+                          <div id="collapse" [ngbCollapse]="isCollapsed">
+    
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Citroen
+                          </span>
+                          </label>
+                          
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Hyundai
+                          </span>
+                          </label>  
+                          
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Kia
+                          </span>
+                          </label> 
+                          
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Mazda
+                          </span>
+                          </label>
+
+                          
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Mitsubishi
+                          </span>
+                          </label>
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Nissan
+                          </span>
+                          </label>
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Opel
+                          </span>
+                          </label>
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Subaru
+                          </span>
+                          </label>
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Suzuki
+                          </span>
+                          </label>
+                          </div>
+
+                          <hr>
+                          <div class="dropdown-container">
+                          <Button type="button" id="3" class="btn btn-outline-primary" (click)="isCollapsed=!isCollapsed"
+                          [attr.aria-expanded]="!isCollapsed" aria-controls="collapse" >Specifications<i class="fa fa-caret-down"></i>                                                
+                          </Button>
+
+                          <div id="collapse" [ngbCollapse]="isCollapsed">
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Automatic Gearbox
+                          </span>
+                          </label>
+                           
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Manual Gearbox
+                          </span>
+                          </label>
+                           
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          Air Conditioning
+                          </span>
+                          </label>
+                          </div>  
+
+                          <hr>
+                          <div class="dropdown-container">
+                          <Button type="button" id="4" class="btn btn-outline-primary" (click)="isCollapsed=!isCollapsed"
+                          [attr.aria-expanded]="!isCollapsed" aria-controls="collapse" >Seats<i class="fa fa-caret-down"></i>                                                
+                          </Button>
+
+                          <div id="collapse" [ngbCollapse]="isCollapsed">
+
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          4 Seats
+                          </span>
+                          </label>
+                           
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          5 Seats
+                          </span>
+                          </label>
+                           
+                          <label class="form-check">
+                          <input class="form-check-input" type="checkbox" value="">
+                          <span class="form-check-label">
+                          6+ Seats
+                          </span>
+                          </label>
+                          </div>
+
+                          <hr>
+                          
+                        </div>
+                     </div>                                            
+                  </div>                   
+                            
+                                                  
+                        
+                               
+                 
+           
+        <!-- </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</form>  -->
+
+             
+             
+          

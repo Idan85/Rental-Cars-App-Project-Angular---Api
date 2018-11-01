@@ -1,0 +1,138 @@
+.catchphrase {
+
+    text-align: center;
+    left: 330px;
+    font-size: 50px;
+    position: relative;
+    color: #f1f1f1;
+    padding: 40px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+
+.form-group {
+
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    position: relative;        
+}
+
+.page-title {
+
+    text-align: center;
+    max-width:80%;
+    margin: 40px;
+    position: relative;
+    margin-right: 30px;
+    left: 32%;
+    font-size: 120px;
+    color:  #F44336;
+    
+}
+
+.form-group {
+
+    text-align: center; 
+    width: 32%;
+    position: relative;
+    margin-right: 35px;
+    box-sizing: border-box;
+    left: 60%;
+    color:black;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#image.form-control {
+
+    padding: 1px 5px;
+
+}
+
+.btn.btn-danger.btn-confirm.btn-clock {
+
+    background-color: #FF5A5F;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 13px;
+    left: 72%;
+    position: relative;
+}
+
+.alert.alert-danger-2 {
+
+    background-color:  #F44336;
+    border-color:  #F44336;
+    color: white;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: 700;
+    left: 60%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center; 
+    width: 32%;
+    margin: 40px;
+}
+
+label { 
+
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    left: -10px;
+}
+
+.alert.alert-danger-1 {
+
+    background-color:  #F44336;
+    border-color:  #F44336;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px;
+    position: relative;
+}
+
+.form-control {
+
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #555;
+}
+.form-control1 {
+
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    color: #555;
+    text-rendering: auto;
+    padding: 1px 5px; 
+}
+
+.form-control2 {
+
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    color: #555;
+    text-rendering: auto;
+    padding: 1px 5px; 
+    left: -60px;
+}
+
+
+
+
+

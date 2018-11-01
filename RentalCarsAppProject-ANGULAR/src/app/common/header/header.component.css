@@ -1,0 +1,65 @@
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+
+    padding: 20px;
+    margin-bottom: 40px;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+a {
+
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.car-rental-app-search {
+
+    height: 50px;
+    width: 300px;
+
+}
+
+.navbar-brand {
+
+    margin-right: 30px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #f44336;
+    font-weight: 500;
+}
+
+.nav-item {
+
+    font-size: 30px;
+}
+
+.btn-car-rental-app-search {
+
+    border-color: #F44336;
+    color: #F44336;
+    background-color: transparent;
+    border-color: #f44336 !important;
+    color: #F44336 !important;
+    box-shadow:  none;
+}
+
+.clickable {
+
+    cursor: pointer;
+}
+
+.dropdown-item {
+
+font-size: 14px;
+}
+
+.dropdown-item:active {
+
+background-color: red;
+}
+
+.dropdown-item:focus {
+
+background-color: red;
+}

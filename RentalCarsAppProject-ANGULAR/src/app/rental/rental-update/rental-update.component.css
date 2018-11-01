@@ -1,0 +1,101 @@
+img {
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.detail-section {
+
+    color: #484848;
+}
+
+.rental {
+
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.rental-type {
+
+    margin-bottom: 5px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rental-title {
+
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.rental-specificiations {
+
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.rental-car-info {
+
+    margin-bottom: 20px;
+    font-weight:700;
+    font-size: 22px;
+    margin-right: 10px;
+    display: block;
+}
+
+.rental-assets {
+
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 22px;
+    display: block;
+}
+
+.rental-owner {
+
+    position: relative; 
+    float: right;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    font-size: 17px;
+    font-weight: 1000;
+    width: 15%;
+    text-align: center;
+
+}
+
+h3.title {
+
+    font-size: 25px;
+    left: 40px;
+}
+
+.rental[_ngcontent-c3] {
+
+    position: relative;
+    font-size: 32px;
+    font-weight: 700; 
+    margin: 0;
+}
+
+.rental-car-info[_ngcontent-c3] {
+
+    position: relative;
+    font-size: 32px;
+    font-weight: 700; 
+    margin: 0;
+}
+
+.rental-assets[_ngcontent-c3] {
+
+    position: relative;
+    font-size: 32px;
+    font-weight: 700; 
+    margin: 0;
+}
+
+
